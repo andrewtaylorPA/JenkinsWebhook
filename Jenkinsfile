@@ -8,5 +8,12 @@ pipeline {
         }
       }
     }
+    stage ('Clean-up') {
+      steps {
+        script {
+          sh 'echo "Webhook change"'
+        }
+      }
+    }
   }
 }
