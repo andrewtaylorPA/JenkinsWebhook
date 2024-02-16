@@ -8,7 +8,7 @@ pipeline {
         }
       }
     }
-    stage ('Clean-up') {
+    stage ('Echo Commands') {
       steps {
         script {
           sh 'echo "Webhook change 2"'
